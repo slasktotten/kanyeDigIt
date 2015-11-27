@@ -24,3 +24,12 @@ function mousePressed() {
     sample.play();
   }
 }
+
+function mute() {
+    var image = document.getElementById('mutebutton');
+    if (image.src.match("assets/quaver.png")) {
+        image.src = "assets/mute.png";
+    } else {
+        image.src = "assets/quaver.png";
+    }
+}
